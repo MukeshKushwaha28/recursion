@@ -1,1 +1,45 @@
+// Online C++ compiler to run C++ program online
+print from 1 to n
+#include <bits/stdc++.h>
 
+void print1_toN(int i,int n){
+    
+    if(i==n) 
+    return;
+    
+    std::cout<<i<<" ";
+    print1_toN(i+1,n);
+}
+
+int main() {
+    // Write C++ code here
+    int i = 0;
+    print1_toN(i,3);
+     
+    return 0;
+}
+
+*******************************************************************************
+
+print n to 1
+
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+
+void printN_to1(int n){
+    
+    if(n<1) 
+    return;
+    
+    std::cout<<n<<" ";
+    
+    printN_to1(n-1);
+}
+
+int main() {
+    // Write C++ code here
+    int n = 3;
+    printN_to1(n);
+     
+    return 0;
+}
